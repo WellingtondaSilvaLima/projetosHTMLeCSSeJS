@@ -1,6 +1,25 @@
+/* Global */
 body {
   font-family: 'Montserrat', sans-serif;
   color: #404040;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+}
+
+strong, b {
+  font-weight: 600;
 }
 
 /* Cabeçalho */
@@ -13,33 +32,19 @@ body {
 }
 
 /* Seção Hero */
-h1 {
-  font-size: 35px;
-  line-height: 42px;
-  font-weight: 600;
-}
-
 .paragrafo-secao-hero {
   font-size: 19px;
-  line-height: 23px;
 }
 
 .btn-secao-hero {
   color: #fff;
   font-size: 24px;
-  line-height: 1;
   font-weight: 700;
   text-decoration: none;
 }
 
 /* Seção Conteúdos Gratuitos */
-.h2-secao-conteudos-gratuitos {
-  font-size: 35px;
-  line-height: 42px;
-  font-weight: 400;
-}
-
-.h2-secao-conteudos-gratuitos span {
+.span-secao-conteudos-gratuitos {
   color: #7A40BE;
   font-weight: 600;
 }
@@ -57,39 +62,14 @@ h1 {
 }
 
 /* Seção Diferenciais */
-.h2-secao-diferenciais {
-  font-size: 35px;
-  line-height: 42px;
-  font-weight: 400;
-  /* color: #fff; */
-}
-
-.h2-secao-diferenciais strong {
-  font-weight: 600;
-}
-
 .paragrafo-secao-diferenciais {
   font-size: 19px;
-  line-height: 23px;
   /* color: #fff; */
 }
 
 .h3-secao-diferenciais {
   font-size: 24px;
   color: #005e88;
-  font-weight: 600;
-}
-
-.paragrafos-internos-secao-diferenciais {
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.paragrafos-internos-secao-diferenciais strong {
-  font-weight: 600;
-}
-
-.paragrafos-internos-secao-diferenciais b {
   font-weight: 600;
 }
 
@@ -105,37 +85,18 @@ h1 {
 }
 
 /* Seção O que falam */
-.h2-secao-o-que-falam {
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 42px;
-  /* color: #fff; */
-}
-
-.h2-secao-o-que-falam span {
+.span-secao-o-que-falam {
   font-weight: 600;
 }
 
 .btn-secao-o-que-falam {
   font-size: 24px;
-  line-height: 1;
   font-weight: 700;
   text-decoration: none;
   /* color: #fff; */
 }
 
-/* Seção Hashtag na Mídia */
-.h2-secao-midia {
-  font-size: 35px;
-  font-weight: 400;
-}
-
 /* Seção Blog da Hashtag */
-.h2-secao-blog {
-  font-size: 35px;
-  font-weight: 400;
-}
-
 .paragrafo-postado {
   font-size: 15px;
 }
@@ -143,6 +104,7 @@ h1 {
 .paragrafo-postado a {
   color: #f7a70c;
   text-decoration: none;
+  font-weight: 600;
 }
 
 .titulo-post {
@@ -157,3 +119,71 @@ h1 {
 }
 
 /* Seção Como ajudar */
+.span-secao-ajuda {
+  font-weight: 600;
+  /* color: #fff; */
+}
+
+.itens-lista-secao-ajuda, .paragrafo-secao-ajuda {
+  font-size: 19px;
+}
+
+.itens-lista-secao-ajuda a, .paragrafo-secao-ajuda a {
+  color: #008ff7;
+  font-weight: 600;
+}
+
+.paragrafo-secao-ajuda strong, .paragrafo-secao-ajuda b {
+  font-weight: bolder;
+}
+
+/* Seção Minicurso */
+.strong-secao-minicurso {
+  font-weight: bolder;
+  /* color: #fff; */
+}
+
+.label-secao-minicurso {
+  font-size: 19px;
+  /* color: #fff; */
+}
+
+.btn-secao-minicurso {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Seção Rodapé */
+.titulo-secao-rodape {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.titulo-curso-secao-rodape {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.assistente-secao-rodape {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.link-secao-rodape {
+  color: #1a77a4;
+}
+
+.h2-secao-rodape {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.label-secao-rodape {
+  font-size: 18px;
+}
+
+.btn-secao-rodape {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
