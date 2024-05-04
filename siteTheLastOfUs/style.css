@@ -11,7 +11,15 @@ body {
   background-image: url(imagens/fundo.png);
 }
 
+header {
+  display: flex;
+  
+}
+
 .menu-lateral {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;

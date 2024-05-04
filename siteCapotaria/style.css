@@ -10,10 +10,18 @@ html{
 
 header{
   background-color: #2b1821;
+  height: 50rem;
 }
 
 .titulo{
   color: #fff;
-  font-weight: 700;
-  display: inline;
+  display: flexbox;
+  width: 50%;
+  height: 100%;
+}
+
+.titulo h1, .titulo p, .titulo button {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
 }
