@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(imagens/fundo.png);
+}
+
+.menu-lateral {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: aliceblue;
+}
+
+a img {
+  width: 4rem;
+  height: 4rem;
+}
