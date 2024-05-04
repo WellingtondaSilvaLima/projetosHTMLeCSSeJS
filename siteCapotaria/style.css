@@ -15,4 +15,5 @@ header{
 .titulo{
   color: #fff;
   font-weight: 700;
+  display: inline;
 }
