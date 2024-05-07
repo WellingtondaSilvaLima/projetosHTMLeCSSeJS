@@ -1,44 +1,93 @@
+/* Sistemas de tamanhos  https://typescale.com/
+
+Fontes - Minor Third - 1.200 - Em PX
+4.4 - 5.4 - 6.4 - 7.7 - 9.2 - 11.1 - 13.3 - 16 - 19.2 - 23 -
+27.6 - 33.2 - 39.8 - 47.8 - 57.3 - 68.8 - 82.6
+
+Espaçamentos - Major Third - 1.250 - Em PX
+2.1 - 2.7 - 3.3 - 4.2 - 5.2 - 6.5 - 8.2 - 10.2 - 12.8 - 16 -
+20 - 25 - 31.2 - 39 - 48.8 - 61 - 76.3 - 95.4 - 119.2
+
+*/
+
 /* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
-}
-
-p {
-  font-size: 16px;
 }
 
 strong, b {
   font-weight: 600;
 }
 
+
 /* Cabeçalho */
+header {
+  padding: 1.6rem 3.12rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+/* Temporário */
+nav {
+  display: none;
+}
+
 .barra-menu a {
   color: #112E61;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
+}
+
+.barra-menu a:hover,
+.barra-menu a:active {
+  color: #f60;
+}
+
+.barra-menu.contem-filhos::after {
+  content: "\2bc6";
 }
 
 /* Seção Hero */
 .paragrafo-secao-hero {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .btn-secao-hero {
   color: #fff;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -50,31 +99,31 @@ strong, b {
 }
 
 .h3-secao-conteudos-gratuitos {
-  font-size: 23px;
+  font-size: 2.3rem;
   font-weight: 700;
   /* color: #fff; */
 }
 
 .itens-secao-conteudos-gratuitos {
-  font-size: 19px;
+  font-size: 1.9rem;
   text-decoration: none;
   color: #404040;
 }
 
 /* Seção Diferenciais */
 .paragrafo-secao-diferenciais {
-  font-size: 19px;
+  font-size: 1.9rem;
   /* color: #fff; */
 }
 
 .h3-secao-diferenciais {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #005e88;
   font-weight: 600;
 }
 
 .empresas-secao-diferenciais {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -90,7 +139,7 @@ strong, b {
 }
 
 .btn-secao-o-que-falam {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
   /* color: #fff; */
@@ -98,7 +147,7 @@ strong, b {
 
 /* Seção Blog da Hashtag */
 .paragrafo-postado {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .paragrafo-postado a {
@@ -108,14 +157,14 @@ strong, b {
 }
 
 .titulo-post {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
   color: #404040;
 }
 
 .paragrafo-descricao-post {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 /* Seção Como ajudar */
@@ -125,7 +174,7 @@ strong, b {
 }
 
 .itens-lista-secao-ajuda, .paragrafo-secao-ajuda {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .itens-lista-secao-ajuda a, .paragrafo-secao-ajuda a {
@@ -144,28 +193,28 @@ strong, b {
 }
 
 .label-secao-minicurso {
-  font-size: 19px;
+  font-size: 1.9rem;
   /* color: #fff; */
 }
 
 .btn-secao-minicurso {
-  font-size: 30px;
+  font-size: 3rem;
   color: #fff;
 }
 
 /* Seção Rodapé */
 .titulo-secao-rodape {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
 .titulo-curso-secao-rodape {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 .assistente-secao-rodape {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -174,16 +223,16 @@ strong, b {
 }
 
 .h2-secao-rodape {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 600;
 }
 
 .label-secao-rodape {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .btn-secao-rodape {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #fff;
 }
