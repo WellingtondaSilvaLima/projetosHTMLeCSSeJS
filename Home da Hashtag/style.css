@@ -29,17 +29,28 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3.32rem;
+  line-height: 1;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 2.76rem;
+  line-height: 1.1;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 2.3rem;
+  line-height: 1.3;
 }
 
 strong, b {
   font-weight: 600;
+}
+
+ul {
+  list-style: none;
 }
 
 .secao {
@@ -62,20 +73,25 @@ strong, b {
   box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
 }
 
+.paragrafo-secao-hero,
+.paragrafo-secao-diferenciais,
+.itens-lista-secao-ajuda,
+.paragrafo-secao-ajuda {
+  font-size: 1.92rem;
+  line-height: 1.3;
+}
+
 
 /* Cabeçalho */
 header {
   padding: 1.6rem 3.12rem;
   position: sticky;
+  z-index: 999;
   top: 0;
   left: 0;
   background-color: #fff;
   box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
   width: 100%;
-}
-
-nav ul {
-  list-style: none;
 }
 
 /* Temporário */
@@ -108,10 +124,6 @@ nav {
   background-size: cover;
 }
 
-.paragrafo-secao-hero {
-  font-size: 1.9rem;
-}
-
 .btn-secao-hero {
   background-image: linear-gradient(180deg, #ff645e, #ff9253);
   border-bottom: solid 0.4rem #993c38;
@@ -126,42 +138,166 @@ nav {
   color: #993c38;
 }
 
+.iframe-video {
+  aspect-ratio: 16/9;
+  width: 42rem;
+  border-radius: 2.5rem;
+}
+
 /* Seção Conteúdos Gratuitos */
+.secao-conteudos {
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-02.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caixa-cursos-hashtag {
+  box-shadow: inset 0 0 0.8rem 0.1rem rgba(0, 0, 0, 0.1);
+  border-radius: 2.5rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.caixa-gratuito-h3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  padding: 0.42rem 1.6rem;
+  color: white;
+  border-radius: 1rem;
+  background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
+  transform: rotate(-3deg) translate(-50%, -50%);
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.img-conteudos {
+  width: 44rem;
+}
+
+.circulo-logo-curso {
+  display: inline-block;
+  background-color: #e7e7e7;
+  border-radius: 50%;
+  padding: 1.02rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.circulo-logo-curso img {
+  width: 100%;
+}
+
 .span-secao-conteudos-gratuitos {
   color: #7A40BE;
   font-weight: 600;
 }
 
 .h3-secao-conteudos-gratuitos {
-  font-size: 2.3rem;
   font-weight: 700;
   /* color: #fff; */
 }
 
-.itens-secao-conteudos-gratuitos {
-  font-size: 1.9rem;
+.itens-secao-conteudos-gratuitos:link,
+.itens-secao-conteudos-gratuitos:visited {
+  font-size: 1.92rem;
+  line-height: 1.3;
   text-decoration: none;
-  color: #404040;
+  display: inline-block;
+  padding: 0.42rem 3.12rem;
+  border-radius: 2.5rem;
+  background-color: #eee;
+  box-shadow: inset 0 0 0.4rem 0.2rem rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+
+.itens-secao-conteudos-gratuitos:hover,
+.itens-secao-conteudos-gratuitos:active {
+  text-decoration: underline;
+}
+
+.itens-secao-conteudos-gratuitos img {
+  width: 1.1rem;
 }
 
 /* Seção Diferenciais */
-.paragrafo-secao-diferenciais {
-  font-size: 1.9rem;
-  /* color: #fff; */
+.secao-diferenciais {
+  background-color: #f4f5f7;
+}
+
+.caixa-diferenciais-h2 {
+  border-left: solid 0.5rem #ffb20f;
+  padding: 0.52rem 0 0.52rem 1.6rem;
+}
+
+.container-diferenciais {
+  border-radius: 5rem;
+  background-color: white;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+.caixa-titulo-diferenciais {
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  background-image: linear-gradient(225deg, #196b9f, #1a82a7);
+  padding: 4.88rem;
+  color: white;
+}
+
+.caixa-restante-diferenciais {
+  padding: 4.88rem 3.12rem;
+}
+
+.caixa-itens-diferenciais {
+  position: relative;
+  border-radius: 2.5rem;
+  background-color: white;
+  box-shadow: 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1);
+  padding: 3.12rem 2.5rem;
+}
+
+.caixa-imagem-diferenciais {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffaf00;
+  display: inline-block;
+  border-radius: 1.5rem;
+  width: 10rem;
+  height: 10rem;
+  padding: 1.6rem;
+  box-shadow: inset 0 0 0.8rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.caixa-imagem-diferenciais img {
+  width: 100%;
+}
+
+.diferenciasi-empresas img {
+  height: 5rem;
+  filter: grayscale(100%);
+}
+
+.logo-loreal,
+.logo-subsea7,
+.logo-disney,
+.logo-animale {
+  opacity: 55%;
 }
 
 .h3-secao-diferenciais {
-  font-size: 2.4rem;
   color: #005e88;
   font-weight: 600;
 }
 
-.empresas-secao-diferenciais {
-  font-size: 3.5rem;
+.diferenciais-h3-empresas {
   font-weight: 400;
 }
 
-.empresas-secao-diferenciais a {
+.diferenciais-h3-empresas a {
   color: #005e88;
   font-weight: 700;
   text-decoration: none;
@@ -204,10 +340,6 @@ nav {
   /* color: #fff; */
 }
 
-.itens-lista-secao-ajuda, .paragrafo-secao-ajuda {
-  font-size: 1.9rem;
-}
-
 .itens-lista-secao-ajuda a, .paragrafo-secao-ajuda a {
   color: #008ff7;
   font-weight: 600;
@@ -224,7 +356,8 @@ nav {
 }
 
 .label-secao-minicurso {
-  font-size: 1.9rem;
+  font-size: 1.92rem;
+  line-height: 1.3;
   /* color: #fff; */
 }
 
