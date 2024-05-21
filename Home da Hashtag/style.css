@@ -71,6 +71,8 @@ ul {
   padding: 0.65rem 2.5rem;
   color: white;
   box-shadow: 0 0.21rem 0.8rem rgba(0, 0, 0, 0.15);
+  border-bottom: solid 0.4rem #993c38;
+  border-right: solid 0.4rem #993c38;
 }
 
 .paragrafo-secao-hero,
@@ -126,8 +128,6 @@ nav {
 
 .btn-secao-hero {
   background-image: linear-gradient(180deg, #ff645e, #ff9253);
-  border-bottom: solid 0.4rem #993c38;
-  border-right: solid 0.4rem #993c38;
 }
 
 .btn-secao-hero:hover {
@@ -304,12 +304,99 @@ nav {
 }
 
 /* Seção O que falam */
-.span-secao-o-que-falam {
-  font-weight: 600;
+.secao-oquefalam {
+  background-image: url(https://www.hashtagtreinamentos.com/wp-content/uploads/2022/06/BACKGROUN-banner-04.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.btn-secao-o-que-falam {
-  color: #fff;
+.oquefalam-titulo {
+  color: white;
+}
+
+.oquefalam-carrossel {
+  position: relative;
+}
+
+.oquefalam-carrossel-img {
+  background-color: #7489af;
+  background-blend-mode: multiply;
+  position: relative;
+  background-position: 50%;
+  background-size: cover;
+  aspect-ratio: 16/9;
+  width: 33%;
+  border-radius: 2.5rem;
+  display: inline-block;
+}
+
+.oquefalam-carrossel-img-1 {
+  background-image: url(http://i3.ytimg.com/vi/N_EZD04zmrw/hqdefault.jpg);
+}
+
+.oquefalam-carrossel-img-2 {
+  background-image: url(http://i3.ytimg.com/vi/auqWeBJLJHY/hqdefault.jpg);
+}
+
+.oquefalam-carrossel-img-3 {
+  background-image: url(http://i3.ytimg.com/vi/FD79IpCaM1Y/hqdefault.jpg);
+}
+
+.seta-play {
+  width: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.oquefalam-seta {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+
+.seta-direita {
+  right: 0;
+  transform: translate(160%, -60%);
+}
+
+.seta-esquerda {
+  left: 0;
+  transform: translate(-160%, -60%);
+}
+
+.item-navegacao {
+  cursor: pointer;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #86a8bc;
+}
+
+.item-navegacao.ativa {
+  background-color: #14577f;
+}
+
+.btn-oquefalam {
+  background-image: linear-gradient(180deg, #196c9f, #1a80a7);
+  border-bottom-color: #14577f;
+  border-right-color: #14577f;
+}
+
+.btn-oquefalam:hover {
+  background-image: none;
+  background-color: white;
+  border-bottom-color: white;
+  border-right-color: white;
+  color: #14577f;
+}
+
+.span-secao-o-que-falam {
+  font-weight: 600;
 }
 
 /* Seção Blog da Hashtag */
