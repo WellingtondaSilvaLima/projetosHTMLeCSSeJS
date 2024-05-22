@@ -40,7 +40,8 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
+h3,
+.titulo-post {
   font-size: 2.3rem;
   line-height: 1.3;
 }
@@ -60,6 +61,25 @@ ul {
 .container {
   max-width: 100rem;
   margin: 0 auto;
+}
+
+.container-diferenciais,
+.container-blog {
+  border-radius: 5rem;
+  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+.caixa-gratuito-h3,
+.caixa-blog-h2 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  padding: 0.42rem 1.6rem;
+  color: white;
+  border-radius: 1rem;
+  transform: rotate(-3deg) translate(-50%, -50%);
+  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .botao {
@@ -160,16 +180,7 @@ nav {
 }
 
 .caixa-gratuito-h3 {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  display: inline-block;
-  padding: 0.42rem 1.6rem;
-  color: white;
-  border-radius: 1rem;
   background-image: linear-gradient(90deg, #aa56e6, #6d42b9);
-  transform: rotate(-3deg) translate(-50%, -50%);
-  box-shadow: 0 0.21rem 0.4rem rgba(0, 0, 0, 0.1);
 }
 
 .img-conteudos {
@@ -233,9 +244,7 @@ nav {
 }
 
 .container-diferenciais {
-  border-radius: 5rem;
   background-color: white;
-  box-shadow: inset 0 0 0.8rem 0.3rem rgba(0, 0, 0, 0.1);
 }
 
 .caixa-titulo-diferenciais {
@@ -414,8 +423,37 @@ nav {
 }
 
 /* Seção Blog da Hashtag */
+.secao-blog {
+  background-color: #f4f5f7;
+}
+
+.container-blog {
+  background-color: #f9f9f9;
+  padding: 4.88rem;
+  position: relative;
+}
+
+.caixa-blog-h2 {
+  width: max-content;
+  background-image: linear-gradient(90deg, #feb914, #f6a50b);
+  padding: 1.02rem 3.12rem;
+}
+
+.caixa-postblog {
+  display: inline-block;
+  border-radius: 2.5rem;
+  box-shadow: inset 0 0 0.4rem 0.15rem rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 49%;
+}
+
+.caixa-postblog img {
+  width: 100%;
+}
+
 .paragrafo-postado {
-  font-size: 1.5rem;
+  font-size: 1.33rem;
+  line-height: 1.5;
 }
 
 .paragrafo-postado a {
@@ -425,14 +463,9 @@ nav {
 }
 
 .titulo-post {
-  font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
   color: #404040;
-}
-
-.paragrafo-descricao-post {
-  font-size: 1.7rem;
 }
 
 /* Seção Como ajudar */
